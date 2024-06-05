@@ -1,6 +1,12 @@
 <?php
 
+
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\HomeController;
+use SebastianBergmann\CodeCoverage\Report\Html\Dashboard;
+use App\Http\Controllers\AuthController;
+use PhpParser\Node\Stmt\Return_;
+use App\Http\Controllers\CastController;
 
 /*
 |--------------------------------------------------------------------------
@@ -12,7 +18,7 @@ use Illuminate\Support\Facades\Route;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
-
-Route::get('/', function () {
-    return view('welcome');
+Route::get('/master', function(){
+    return view('layouts.master') ;
 });
+
