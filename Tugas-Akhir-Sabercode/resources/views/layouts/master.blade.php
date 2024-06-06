@@ -38,7 +38,7 @@
                 <div class="col-lg-2">
                     <div class="header__logo">
                         <a href="./index.html">
-                            <img src="img/logo.png" alt="">
+                            <img src="{{asset('template/img/logo.png') }}" alt="">
                         </a>
                     </div>
                 </div>
@@ -79,7 +79,7 @@
     <section class="hero">
         <div class="container">
             <div class="hero__slider owl-carousel">
-                <div class="hero__items set-bg" data-setbg="img/hero/hero-1.jpg">
+                <div class="hero__items set-bg" data-setbg="{{asset ('template/img/hero/hero-1.jpg') }}">
                     <div class="row">
                         <div class="col-lg-6">
                             <div class="hero__text">
@@ -91,7 +91,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="hero__items set-bg" data-setbg="img/hero/hero-1.jpg">
+                <div class="hero__items set-bg" data-setbg="{{asset('template/img/hero/hero-1.jpg') }}">
                     <div class="row">
                         <div class="col-lg-6">
                             <div class="hero__text">
@@ -103,7 +103,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="hero__items set-bg" data-setbg="img/hero/hero-1.jpg">
+                <div class="hero__items set-bg" data-setbg="{{asset ('template/img/hero/hero-1.jpg') }}">
                     <div class="row">
                         <div class="col-lg-6">
                             <div class="hero__text">
@@ -141,7 +141,7 @@
                         <div class="row">
                             <div class="col-lg-4 col-md-6 col-sm-6">
                                 <div class="product__item">
-                                    <div class="product__item__pic set-bg" data-setbg="img/trending/trend-1.jpg">
+                                    <div class="product__item__pic set-bg" data-setbg="{{asset ('template/img/trending/trend-1.jpg') }}">
                                         <div class="ep">18 / 18</div>
                                         <div class="comment"><i class="fa fa-comments"></i> 11</div>
                                         <div class="view"><i class="fa fa-eye"></i> 9141</div>
@@ -157,7 +157,7 @@
                             </div>
                             <div class="col-lg-4 col-md-6 col-sm-6">
                                 <div class="product__item">
-                                    <div class="product__item__pic set-bg" data-setbg="img/trending/trend-2.jpg">
+                                    <div class="product__item__pic set-bg" data-setbg="{{asset ('template/img/trending/trend-2.jpg') }}">
                                         <div class="ep">18 / 18</div>
                                         <div class="comment"><i class="fa fa-comments"></i> 11</div>
                                         <div class="view"><i class="fa fa-eye"></i> 9141</div>
@@ -173,7 +173,7 @@
                             </div>
                             <div class="col-lg-4 col-md-6 col-sm-6">
                                 <div class="product__item">
-                                    <div class="product__item__pic set-bg" data-setbg="img/trending/trend-3.jpg">
+                                    <div class="product__item__pic set-bg" data-setbg="{{asset ('template/img/trending/trend-3.jpg') }}">
                                         <div class="ep">18 / 18</div>
                                         <div class="comment"><i class="fa fa-comments"></i> 11</div>
                                         <div class="view"><i class="fa fa-eye"></i> 9141</div>
@@ -189,7 +189,7 @@
                             </div>
                             <div class="col-lg-4 col-md-6 col-sm-6">
                                 <div class="product__item">
-                                    <div class="product__item__pic set-bg" data-setbg="img/trending/trend-4.jpg">
+                                    <div class="product__item__pic set-bg" data-setbg="{{asset ('template/img/trending/trend-4.jpg') }}">
                                         <div class="ep">18 / 18</div>
                                         <div class="comment"><i class="fa fa-comments"></i> 11</div>
                                         <div class="view"><i class="fa fa-eye"></i> 9141</div>
@@ -205,7 +205,7 @@
                             </div>
                             <div class="col-lg-4 col-md-6 col-sm-6">
                                 <div class="product__item">
-                                    <div class="product__item__pic set-bg" data-setbg="img/trending/trend-5.jpg">
+                                    <div class="product__item__pic set-bg" data-setbg="{{asset ('template/img/trending/trend-5.jpg') }}">
                                         <div class="ep">18 / 18</div>
                                         <div class="comment"><i class="fa fa-comments"></i> 11</div>
                                         <div class="view"><i class="fa fa-eye"></i> 9141</div>
@@ -221,7 +221,7 @@
                             </div>
                             <div class="col-lg-4 col-md-6 col-sm-6">
                                 <div class="product__item">
-                                    <div class="product__item__pic set-bg" data-setbg="img/trending/trend-6.jpg">
+                                    <div class="product__item__pic set-bg" data-setbg="{{asset ('template/img/trending/trend-6.jpg') }}">
                                         <div class="ep">18 / 18</div>
                                         <div class="comment"><i class="fa fa-comments"></i> 11</div>
                                         <div class="view"><i class="fa fa-eye"></i> 9141</div>
@@ -253,7 +253,7 @@
                         <div class="row">
                             <div class="col-lg-4 col-md-6 col-sm-6">
                                 <div class="product__item">
-                                    <div class="product__item__pic set-bg" data-setbg="img/popular/popular-1.jpg">
+                                    <div class="product__item__pic set-bg" data-setbg="{{asset ('template/img/popular/popular-1.jpg') }}">
                                         <div class="ep">18 / 18</div>
                                         <div class="comment"><i class="fa fa-comments"></i> 11</div>
                                         <div class="view"><i class="fa fa-eye"></i> 9141</div>
@@ -269,7 +269,7 @@
                             </div>
                             <div class="col-lg-4 col-md-6 col-sm-6">
                                 <div class="product__item">
-                                    <div class="product__item__pic set-bg" data-setbg="img/popular/popular-2.jpg">
+                                    <div class="product__item__pic set-bg" data-setbg="{{asset ('template/img/popular/popular-2.jpg') }}">
                                         <div class="ep">18 / 18</div>
                                         <div class="comment"><i class="fa fa-comments"></i> 11</div>
                                         <div class="view"><i class="fa fa-eye"></i> 9141</div>
@@ -285,7 +285,7 @@
                             </div>
                             <div class="col-lg-4 col-md-6 col-sm-6">
                                 <div class="product__item">
-                                    <div class="product__item__pic set-bg" data-setbg="img/popular/popular-3.jpg">
+                                    <div class="product__item__pic set-bg" data-setbg="{{asset ('template/img/popular/popular-3.jpg') }}">
                                         <div class="ep">18 / 18</div>
                                         <div class="comment"><i class="fa fa-comments"></i> 11</div>
                                         <div class="view"><i class="fa fa-eye"></i> 9141</div>
@@ -301,7 +301,7 @@
                             </div>
                             <div class="col-lg-4 col-md-6 col-sm-6">
                                 <div class="product__item">
-                                    <div class="product__item__pic set-bg" data-setbg="img/popular/popular-4.jpg">
+                                    <div class="product__item__pic set-bg" data-setbg="{{asset ('template/img/popular/popular-4.jpg') }}">
                                         <div class="ep">18 / 18</div>
                                         <div class="comment"><i class="fa fa-comments"></i> 11</div>
                                         <div class="view"><i class="fa fa-eye"></i> 9141</div>
@@ -317,7 +317,7 @@
                             </div>
                             <div class="col-lg-4 col-md-6 col-sm-6">
                                 <div class="product__item">
-                                    <div class="product__item__pic set-bg" data-setbg="img/popular/popular-5.jpg">
+                                    <div class="product__item__pic set-bg" data-setbg="{{asset ('template/img/popular/popular-5.jpg') }}">
                                         <div class="ep">18 / 18</div>
                                         <div class="comment"><i class="fa fa-comments"></i> 11</div>
                                         <div class="view"><i class="fa fa-eye"></i> 9141</div>
@@ -333,7 +333,7 @@
                             </div>
                             <div class="col-lg-4 col-md-6 col-sm-6">
                                 <div class="product__item">
-                                    <div class="product__item__pic set-bg" data-setbg="img/popular/popular-6.jpg">
+                                    <div class="product__item__pic set-bg" data-setbg="{{asset ('template/img/popular/popular-6.jpg') }}">
                                         <div class="ep">18 / 18</div>
                                         <div class="comment"><i class="fa fa-comments"></i> 11</div>
                                         <div class="view"><i class="fa fa-eye"></i> 9141</div>
@@ -365,7 +365,7 @@
                         <div class="row">
                             <div class="col-lg-4 col-md-6 col-sm-6">
                                 <div class="product__item">
-                                    <div class="product__item__pic set-bg" data-setbg="img/recent/recent-1.jpg">
+                                    <div class="product__item__pic set-bg" data-setbg="{{asset ('template/img/recent/recent-1.jpg') }}">
                                         <div class="ep">18 / 18</div>
                                         <div class="comment"><i class="fa fa-comments"></i> 11</div>
                                         <div class="view"><i class="fa fa-eye"></i> 9141</div>
@@ -381,7 +381,7 @@
                             </div>
                             <div class="col-lg-4 col-md-6 col-sm-6">
                                 <div class="product__item">
-                                    <div class="product__item__pic set-bg" data-setbg="img/recent/recent-2.jpg">
+                                    <div class="product__item__pic set-bg" data-setbg="{{asset ('template/img/recent/recent-2.jpg') }}">
                                         <div class="ep">18 / 18</div>
                                         <div class="comment"><i class="fa fa-comments"></i> 11</div>
                                         <div class="view"><i class="fa fa-eye"></i> 9141</div>
@@ -397,7 +397,7 @@
                             </div>
                             <div class="col-lg-4 col-md-6 col-sm-6">
                                 <div class="product__item">
-                                    <div class="product__item__pic set-bg" data-setbg="img/recent/recent-3.jpg">
+                                    <div class="product__item__pic set-bg" data-setbg="{{asset ('template/img/recent/recent-3.jpg') }}">
                                         <div class="ep">18 / 18</div>
                                         <div class="comment"><i class="fa fa-comments"></i> 11</div>
                                         <div class="view"><i class="fa fa-eye"></i> 9141</div>
@@ -413,7 +413,7 @@
                             </div>
                             <div class="col-lg-4 col-md-6 col-sm-6">
                                 <div class="product__item">
-                                    <div class="product__item__pic set-bg" data-setbg="img/recent/recent-4.jpg">
+                                    <div class="product__item__pic set-bg" data-setbg="{{asset ('template/img/recent/recent-4.jpg') }}">
                                         <div class="ep">18 / 18</div>
                                         <div class="comment"><i class="fa fa-comments"></i> 11</div>
                                         <div class="view"><i class="fa fa-eye"></i> 9141</div>
@@ -429,7 +429,7 @@
                             </div>
                             <div class="col-lg-4 col-md-6 col-sm-6">
                                 <div class="product__item">
-                                    <div class="product__item__pic set-bg" data-setbg="img/recent/recent-5.jpg">
+                                    <div class="product__item__pic set-bg" data-setbg="{{asset ('template/img/recent/recent-5.jpg') }}">
                                         <div class="ep">18 / 18</div>
                                         <div class="comment"><i class="fa fa-comments"></i> 11</div>
                                         <div class="view"><i class="fa fa-eye"></i> 9141</div>
@@ -445,7 +445,7 @@
                             </div>
                             <div class="col-lg-4 col-md-6 col-sm-6">
                                 <div class="product__item">
-                                    <div class="product__item__pic set-bg" data-setbg="img/recent/recent-6.jpg">
+                                    <div class="product__item__pic set-bg" data-setbg="{{asset ('template/img/recent/recent-6.jpg') }}">
                                         <div class="ep">18 / 18</div>
                                         <div class="comment"><i class="fa fa-comments"></i> 11</div>
                                         <div class="view"><i class="fa fa-eye"></i> 9141</div>
@@ -477,7 +477,7 @@
                         <div class="row">
                             <div class="col-lg-4 col-md-6 col-sm-6">
                                 <div class="product__item">
-                                    <div class="product__item__pic set-bg" data-setbg="img/live/live-1.jpg">
+                                    <div class="product__item__pic set-bg" data-setbg="{{asset ('template/img/live/live-1.jpg') }}">
                                         <div class="ep">18 / 18</div>
                                         <div class="comment"><i class="fa fa-comments"></i> 11</div>
                                         <div class="view"><i class="fa fa-eye"></i> 9141</div>
@@ -493,7 +493,7 @@
                             </div>
                             <div class="col-lg-4 col-md-6 col-sm-6">
                                 <div class="product__item">
-                                    <div class="product__item__pic set-bg" data-setbg="img/live/live-2.jpg">
+                                    <div class="product__item__pic set-bg" data-setbg="{{asset ('template/img/live/live-2.jpg') }}">
                                         <div class="ep">18 / 18</div>
                                         <div class="comment"><i class="fa fa-comments"></i> 11</div>
                                         <div class="view"><i class="fa fa-eye"></i> 9141</div>
@@ -509,7 +509,7 @@
                             </div>
                             <div class="col-lg-4 col-md-6 col-sm-6">
                                 <div class="product__item">
-                                    <div class="product__item__pic set-bg" data-setbg="img/live/live-3.jpg">
+                                    <div class="product__item__pic set-bg" data-setbg="{{asset ('template/img/live/live-3.jpg') }}">
                                         <div class="ep">18 / 18</div>
                                         <div class="comment"><i class="fa fa-comments"></i> 11</div>
                                         <div class="view"><i class="fa fa-eye"></i> 9141</div>
@@ -525,7 +525,7 @@
                             </div>
                             <div class="col-lg-4 col-md-6 col-sm-6">
                                 <div class="product__item">
-                                    <div class="product__item__pic set-bg" data-setbg="img/live/live-4.jpg">
+                                    <div class="product__item__pic set-bg" data-setbg="{{asset ('template/img/live/live-4.jpg') }}">
                                         <div class="ep">18 / 18</div>
                                         <div class="comment"><i class="fa fa-comments"></i> 11</div>
                                         <div class="view"><i class="fa fa-eye"></i> 9141</div>
@@ -541,7 +541,7 @@
                             </div>
                             <div class="col-lg-4 col-md-6 col-sm-6">
                                 <div class="product__item">
-                                    <div class="product__item__pic set-bg" data-setbg="img/live/live-5.jpg">
+                                    <div class="product__item__pic set-bg" data-setbg="{{asset ('template/img/live/live-5.jpg') }}">
                                         <div class="ep">18 / 18</div>
                                         <div class="comment"><i class="fa fa-comments"></i> 11</div>
                                         <div class="view"><i class="fa fa-eye"></i> 9141</div>
@@ -557,7 +557,7 @@
                             </div>
                             <div class="col-lg-4 col-md-6 col-sm-6">
                                 <div class="product__item">
-                                    <div class="product__item__pic set-bg" data-setbg="img/live/live-6.jpg">
+                                    <div class="product__item__pic set-bg" data-setbg="{{asset ('template/img/live/live-6.jpg') }}">
                                         <div class="ep">18 / 18</div>
                                         <div class="comment"><i class="fa fa-comments"></i> 11</div>
                                         <div class="view"><i class="fa fa-eye"></i> 9141</div>
@@ -588,31 +588,31 @@
                             </ul>
                             <div class="filter__gallery">
                                 <div class="product__sidebar__view__item set-bg mix day years"
-                                data-setbg="img/sidebar/tv-1.jpg">
+                                data-setbg="{{asset ('template/img/sidebar/tv-1.jpg') }}">
                                 <div class="ep">18 / ?</div>
                                 <div class="view"><i class="fa fa-eye"></i> 9141</div>
                                 <h5><a href="#">Boruto: Naruto next generations</a></h5>
                             </div>
                             <div class="product__sidebar__view__item set-bg mix month week"
-                            data-setbg="img/sidebar/tv-2.jpg">
+                            data-setbg="{{asset ('template/img/sidebar/tv-2.jpg') }}">
                             <div class="ep">18 / ?</div>
                             <div class="view"><i class="fa fa-eye"></i> 9141</div>
                             <h5><a href="#">The Seven Deadly Sins: Wrath of the Gods</a></h5>
                         </div>
                         <div class="product__sidebar__view__item set-bg mix week years"
-                        data-setbg="img/sidebar/tv-3.jpg">
+                        data-setbg="{{asset ('template/img/sidebar/tv-3.jpg') }}">
                         <div class="ep">18 / ?</div>
                         <div class="view"><i class="fa fa-eye"></i> 9141</div>
                         <h5><a href="#">Sword art online alicization war of underworld</a></h5>
                     </div>
                     <div class="product__sidebar__view__item set-bg mix years month"
-                    data-setbg="img/sidebar/tv-4.jpg">
+                    data-setbg="{{asset ('template/img/sidebar/tv-4.jpg') }}">
                     <div class="ep">18 / ?</div>
                     <div class="view"><i class="fa fa-eye"></i> 9141</div>
                     <h5><a href="#">Fate/stay night: Heaven's Feel I. presage flower</a></h5>
                 </div>
                 <div class="product__sidebar__view__item set-bg mix day"
-                data-setbg="img/sidebar/tv-5.jpg">
+                data-setbg="{{asset ('template/img/sidebar/tv-5.jpg') }}">
                 <div class="ep">18 / ?</div>
                 <div class="view"><i class="fa fa-eye"></i> 9141</div>
                 <h5><a href="#">Fate stay night unlimited blade works</a></h5>
@@ -625,7 +625,7 @@
         </div>
         <div class="product__sidebar__comment__item">
             <div class="product__sidebar__comment__item__pic">
-                <img src="img/sidebar/comment-1.jpg" alt="">
+                <img src="{{asset ('template/img/sidebar/comment-1.jpg') }}" alt="">
             </div>
             <div class="product__sidebar__comment__item__text">
                 <ul>
@@ -638,7 +638,7 @@
         </div>
         <div class="product__sidebar__comment__item">
             <div class="product__sidebar__comment__item__pic">
-                <img src="img/sidebar/comment-2.jpg" alt="">
+                <img src="{{asset('template/img/sidebar/comment-2.jpg') }}" alt="">
             </div>
             <div class="product__sidebar__comment__item__text">
                 <ul>
@@ -651,7 +651,7 @@
         </div>
         <div class="product__sidebar__comment__item">
             <div class="product__sidebar__comment__item__pic">
-                <img src="img/sidebar/comment-3.jpg" alt="">
+                <img src="{{asset('template/img/sidebar/comment-3.jpg') }}" alt="">
             </div>
             <div class="product__sidebar__comment__item__text">
                 <ul>
@@ -664,7 +664,7 @@
         </div>
         <div class="product__sidebar__comment__item">
             <div class="product__sidebar__comment__item__pic">
-                <img src="img/sidebar/comment-4.jpg" alt="">
+                <img src="{{asset('template/img/sidebar/comment-4.jpg') }}" alt="">
             </div>
             <div class="product__sidebar__comment__item__text">
                 <ul>
@@ -692,7 +692,7 @@
         <div class="row">
             <div class="col-lg-3">
                 <div class="footer__logo">
-                    <a href="./index.html"><img src="img/logo.png" alt=""></a>
+                    <a href="./index.html"><img src="{{asset('template/img/logo.png') }}" alt=""></a>
                 </div>
             </div>
             <div class="col-lg-6">
