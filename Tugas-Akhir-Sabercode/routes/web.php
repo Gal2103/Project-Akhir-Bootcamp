@@ -7,6 +7,7 @@ use SebastianBergmann\CodeCoverage\Report\Html\Dashboard;
 use App\Http\Controllers\AuthController;
 use PhpParser\Node\Stmt\Return_;
 use App\Http\Controllers\CastController;
+use App\Http\Controllers\GenreController;
 
 /*
 |--------------------------------------------------------------------------
@@ -18,7 +19,15 @@ use App\Http\Controllers\CastController;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
-Route::get('/master', function(){
-    return view('layouts.master') ;
+
+Route::get('/', function () {
+    return view('dashboard');
 });
 
+Route::get('/master', function () {
+    return view('layouts.master');
+});
+
+Route::resource('genre', GenreController::class);
+
+Auth::routes();

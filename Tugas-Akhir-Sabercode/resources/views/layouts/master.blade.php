@@ -23,6 +23,8 @@
     <link rel="stylesheet" href="{{asset('template/css/owl.carousel.min.css')}}">
     <link rel="stylesheet" href="{{asset ('template/css/slicknav.min.css')}}">
     <link rel="stylesheet" href="{{asset ('template/css/style.css')}}">
+
+    @stack('styles')    
 </head>
 
 <body>
@@ -32,50 +34,30 @@
     </div>
 
     <!-- Header Section Begin -->
-    <header class="header">
+    @include('partials.header')
+    <!-- Header End -->
+
+    {{-- Judul & Konten --}}
+    <section class="blog-details spad">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-2">
-                    <div class="header__logo">
-                        <a href="./index.html">
-                            <img src="{{asset('template/img/logo.png') }}" alt="">
-                        </a>
-                    </div>
-                </div>
+            <div class="row d-flex justify-content-center">
                 <div class="col-lg-8">
-                    <div class="header__nav">
-                        <nav class="header__menu mobile-menu">
-                            <ul>
-                                <li class="active"><a href="./index.html">Homepage</a></li>
-                                <li><a href="./categories.html">Categories <span class="arrow_carrot-down"></span></a>
-                                    <ul class="dropdown">
-                                        <li><a href="./categories.html">Categories</a></li>
-                                        <li><a href="./anime-details.html">Anime Details</a></li>
-                                        <li><a href="./anime-watching.html">Anime Watching</a></li>
-                                        <li><a href="./blog-details.html">Blog Details</a></li>
-                                        <li><a href="./signup.html">Sign Up</a></li>
-                                        <li><a href="./login.html">Login</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="./blog.html">Our Blog</a></li>
-                                <li><a href="#">Contacts</a></li>
-                            </ul>
-                        </nav>
-                    </div>
-                </div>
-                <div class="col-lg-2">
-                    <div class="header__right">
-                        <a href="#" class="search-switch"><span class="icon_search"></span></a>
-                        <a href="./login.html"><span class="icon_profile"></span></a>
+                    <div class="blog__details__title">
+                        <h6>Tugas Akhir Project Sanbercode <span>- Kelompok 10</span></h6>
+                        <h2>@yield('title')</h2>
+                        <div>
+                            @yield('content')
+                        </div>
                     </div>
                 </div>
             </div>
-            <div id="mobile-menu-wrap"></div>
         </div>
-    </header>
-    <!-- Header End -->
+    </section>
+    {{-- End Judul & Konten --}}
 
-    <!-- Hero Section Begin -->
+
+
+    {{-- <!-- Hero Section Begin -->
     <section class="hero">
         <div class="container">
             <div class="hero__slider owl-carousel">
@@ -118,9 +100,9 @@
             </div>
         </div>
     </section>
-    <!-- Hero Section End -->
+    <!-- Hero Section End --> --}}
 
-    <!-- Product Section Begin -->
+    {{-- <!-- Product Section Begin -->
     <section class="product spad">
         <div class="container">
             <div class="row">
@@ -681,7 +663,7 @@
 </div>
 </div>
 </section>
-<!-- Product Section End -->
+<!-- Product Section End --> --}}
 
 <!-- Footer Section Begin -->
 <footer class="footer">
@@ -698,16 +680,16 @@
             <div class="col-lg-6">
                 <div class="footer__nav">
                     <ul>
-                        <li class="active"><a href="./index.html">Homepage</a></li>
-                        <li><a href="./categories.html">Categories</a></li>
-                        <li><a href="./blog.html">Our Blog</a></li>
-                        <li><a href="#">Contacts</a></li>
+                        <li><a href="">Galurade</a></li>
+                        <li><a href="">Willyam</a></li>
+                        <li><a href="">Gilang</a></li>
+                        <li><a href="">Putra</a></li>
                     </ul>
                 </div>
             </div>
             <div class="col-lg-3">
                 <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+                  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | Made By Kelompok 10 
                   <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
 
               </div>
@@ -717,15 +699,15 @@
   <!-- Footer Section End -->
 
   <!-- Search model Begin -->
-  <div class="search-model">
+  {{-- <div class="search-model">
     <div class="h-100 d-flex align-items-center justify-content-center">
         <div class="search-close-switch"><i class="icon_close"></i></div>
         <form class="search-model-form">
             <input type="text" id="search-input" placeholder="Search here.....">
         </form>
     </div>
-</div>
-<!-- Search model end -->
+</div> --}}
+<!-- Search model end --> 
 
 <!-- Js Plugins -->
 <script src="{{asset ('template/js/jquery-3.3.1.min.js') }}"></script>
@@ -737,7 +719,7 @@
 <script src="{{asset ('template/js/owl.carousel.min.js') }}"></script>
 <script src="{{asset ('template/js/main.js') }}"></script>
 
-
+@stack('scripts')
 </body>
 
 </html>
