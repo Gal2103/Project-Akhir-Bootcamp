@@ -29,5 +29,6 @@ Route::get('/master', function () {
 });
 
 Route::resource('genre', GenreController::class);
+Route::resource('cast', castController::class);
 
 Auth::routes();
