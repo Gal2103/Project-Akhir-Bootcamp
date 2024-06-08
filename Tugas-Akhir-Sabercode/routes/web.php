@@ -7,6 +7,7 @@ use SebastianBergmann\CodeCoverage\Report\Html\Dashboard;
 use App\Http\Controllers\AuthController;
 use PhpParser\Node\Stmt\Return_;
 use App\Http\Controllers\CastController;
+use App\Http\Controllers\FilmController;
 use App\Http\Controllers\GenreController;
 
 /*
@@ -30,5 +31,6 @@ Route::get('/master', function () {
 
 Route::resource('genre', GenreController::class);
 Route::resource('cast', castController::class);
+Route::resource('film', FilmController::class);
 
 Auth::routes();
