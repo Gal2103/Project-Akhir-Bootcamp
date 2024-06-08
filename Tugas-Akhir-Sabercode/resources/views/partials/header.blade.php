@@ -4,7 +4,7 @@
             <div class="col-lg-2">
                 <div class="header__logo">
                     <a href="./index.html">
-                        <img src="{{asset('template/img/logo.png') }}" alt="">
+                        <img src="https://cineverse.id/wp-content/uploads/2023/01/Gray-logo-cineverse-185x31-1.png" alt="">
                     </a>
                 </div>
             </div>
@@ -16,6 +16,8 @@
                             <li><a href="/film">Film</a></li>
                             <li><a href="/genre">Genre</a></li>
                             <li><a href="/cast">Cast</a></li>
+                            <li><a href="/kritik">Review</a></li>
+                            @auth
                             <li>
                                 <a  href="{{ route('logout') }}"
                                    onclick="event.preventDefault();
@@ -26,14 +28,15 @@
                                 <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
                                     @csrf
                                 </form>
-                            </li>
+                            </li> 
+                            @endauth
+                            
                         </ul>
                     </nav>
                 </div>
             </div>
             <div class="col-lg-2">
                 <div class="header__right">
-                    <a href="#" class="search-switch"><span class="icon_search"></span></a>
                     <a href="./login.html"><span class="icon_profile"></span></a>
                 </div>
             </div>
