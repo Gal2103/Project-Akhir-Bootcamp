@@ -9,6 +9,7 @@ use PhpParser\Node\Stmt\Return_;
 use App\Http\Controllers\CastController;
 use App\Http\Controllers\FilmController;
 use App\Http\Controllers\GenreController;
+use App\Http\Controllers\KritikController;
 
 /*
 |--------------------------------------------------------------------------
@@ -32,5 +33,6 @@ Route::get('/master', function () {
 Route::resource('genre', GenreController::class);
 Route::resource('cast', castController::class);
 Route::resource('film', FilmController::class);
+Route::resource('kritik', KritikController::class);
 
 Auth::routes();
