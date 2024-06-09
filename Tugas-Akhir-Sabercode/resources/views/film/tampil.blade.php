@@ -5,7 +5,8 @@
 @endsection
 
 @section('content')
-<a href="/film/create" class="btn btn-sm btn-primary">Tambah Film</a>
+<a href="/film/create" class="btn btn-primary">Tambah Film</a>
+<hr>
 
 <div class="row">
 
@@ -15,6 +16,7 @@
                 <img src="{{asset('image/'.$item->poster)}}" class="card-img-top" width="200px" height="300px" alt="...">
                 <div class="card-body">
                     <h4>{{$item->judul}}</h4>
+                    <a class="badge badge-success" href="/genre/{{$item->genre->id}}">{{$item->genre->nama}}</a>
                     <p class="card-text">{{ Str::limit($item->ringkasan, 50)}}</p>
                     <a href="/film/{{$item->id}}" class="btn btn-primary btn-block">Detail</a>
 

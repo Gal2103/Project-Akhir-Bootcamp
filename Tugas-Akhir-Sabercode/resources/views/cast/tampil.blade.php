@@ -41,7 +41,7 @@ Halaman Tampil Cast
 </table>
 
 <div class="d-flex justify-content-center mt-3">
-    <a href="/cast/create" class="btn btn-sm btn-primary">Tambah</a>
+    <a href="/cast/create" class="btn btn-primary">Tambah</a>
 </div>
 
 @endsection

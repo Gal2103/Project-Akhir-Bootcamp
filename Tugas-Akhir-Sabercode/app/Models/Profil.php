@@ -12,4 +12,9 @@ class Profil extends Model
     protected $table = 'profil';
 
     protected $fillable = ['umur', 'bio', 'alamat', 'users_id'];
+
+    public function currentUser()
+    {
+        return $this->belongsTo(User::class, 'users_id');
+    }
 }

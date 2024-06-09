@@ -16,7 +16,6 @@
                             <li><a href="/film">Film</a></li>
                             <li><a href="/genre">Genre</a></li>
                             <li><a href="/cast">Cast</a></li>
-                            <li><a href="/kritik">Review</a></li>
                             @auth
                             <li>
                                 <a  href="{{ route('logout') }}"
@@ -37,7 +36,7 @@
             </div>
             <div class="col-lg-2">
                 <div class="header__right">
-                    <a href="./login.html"><span class="icon_profile"></span></a>
+                    <a href="/profil"><span class="icon_profile"></span></a>
                 </div>
             </div>
         </div>

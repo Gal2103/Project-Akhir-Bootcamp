@@ -10,6 +10,7 @@ use App\Http\Controllers\CastController;
 use App\Http\Controllers\FilmController;
 use App\Http\Controllers\GenreController;
 use App\Http\Controllers\KritikController;
+use App\Http\Controllers\ProfilController;
 
 /*
 |--------------------------------------------------------------------------
@@ -30,9 +31,17 @@ Route::get('/master', function () {
     return view('layouts.master');
 });
 
-Route::resource('genre', GenreController::class);
-Route::resource('cast', castController::class);
-Route::resource('film', FilmController::class);
-Route::resource('kritik', KritikController::class);
+
+Route::middleware(['auth'])->group(function () {
+    Route::resource('genre', GenreController::class);
+    Route::resource('cast', castController::class);
+    Route::resource('film', FilmController::class);
+    Route::get('/profil', [ProfilController::class, 'index']);
+    Route::put('/profil/{id}', [ProfilController::class, 'update']);
+    Route::post('/kritik/{id}', [KritikController::class, 'store']);
+});
+
+
+
 
 Auth::routes();

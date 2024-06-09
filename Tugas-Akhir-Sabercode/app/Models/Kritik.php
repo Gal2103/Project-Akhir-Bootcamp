@@ -11,5 +11,10 @@ class Kritik extends Model
 
     protected $table = 'kritik';
 
-    protected $fillable = ['user_id','film_id','content','point'];
+    protected $fillable = ['users_id', 'film_id', 'content', 'point'];
+
+    public function createdBy()
+    {
+        return $this->belongsTo(User::class, 'users_id');
+    }
 }

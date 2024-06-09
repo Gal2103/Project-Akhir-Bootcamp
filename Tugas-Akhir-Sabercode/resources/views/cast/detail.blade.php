@@ -1,6 +1,6 @@
 @extends('layouts.master')
 @section('title')
-Halaman detail Cast
+Halaman Detail Cast
 @endsection
 
 @section('content')
@@ -9,6 +9,6 @@ Halaman detail Cast
 <p class=" text-white">{{$cast->umur}}</p>
 <p class=" text-white">{{$cast->Bio}}</p>
 
-<a href="/cast" class="btn btn-sm btn-danger">Kembali</a>
+<a href="/cast" class="btn btn-danger">Kembali</a>
 
 @endsection
