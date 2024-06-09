@@ -11,6 +11,7 @@ use App\Http\Controllers\FilmController;
 use App\Http\Controllers\GenreController;
 use App\Http\Controllers\KritikController;
 use App\Http\Controllers\ProfilController;
+use App\Http\Controllers\PeranController;
 
 /*
 |--------------------------------------------------------------------------
@@ -39,6 +40,7 @@ Route::middleware(['auth'])->group(function () {
     Route::get('/profil', [ProfilController::class, 'index']);
     Route::put('/profil/{id}', [ProfilController::class, 'update']);
     Route::post('/kritik/{id}', [KritikController::class, 'store']);
+    Route::post('/peran/{id}', [PeranController::class, 'store']);
 });
 
 

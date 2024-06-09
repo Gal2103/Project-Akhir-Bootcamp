@@ -11,6 +11,62 @@
 
 <hr>
 
+<h4 class="p-2 mb-1 bg-info text-white">Tambah Cast Film</h4>
+<form method="POST" action="/peran/{{$film->id}}">
+  {{-- Validation --}}
+  @if ($errors->any())
+  <div class="alert alert-danger">
+      <ul>
+          @foreach ($errors->all() as $error)
+              <li>{{ $error }}</li>
+          @endforeach
+      </ul>
+  </div>
+  @endif
+
+  {{-- Form Input Peran--}}
+  @csrf
+  <div class="form-group">
+    <label class="text-white">Cast Film</label>
+    <br>
+    <select name="cast_id" class="form-control" id="">
+        <option value="">----------------------------------------------------  Pilih Cast  ----------------------------------------------------</option>
+          @forelse ($cast as $item)
+              <option value="{{$item->id}}">{{$item->nama}}</option>
+          @empty
+              Tidak Ada Cast
+          @endforelse
+    </select>
+  </div>
+  <br>
+  <br>
+  <div class="form-group">
+    <label class="text-white">Nama Peran</label>
+    <input type="text" class="form-control" name="nama">
+  </div>
+  <button type="submit" class="btn btn-primary">Submit Cast</button>
+</form>
+
+<hr>
+
+<h2 class="text-white">List Cast Film</h2>
+@forelse ($film->listCast as $item)
+  <hr>
+  <div class="card">
+    <div class="card-header">
+      {{$item->castId->nama}}
+    </div>
+    <div class="card-body">
+      <h5 class="card-title">Berperan Sebagai : {{$item->nama}}</h5>
+    </div>
+  </div>
+@empty
+    <h4 class="text-white">Tidak ada Cast</h4>
+@endforelse
+
+
+<hr>
+
 <h4 class="p-2 mb-1 bg-info text-white">Review Film</h4>
 <form method="POST" action="/kritik/{{$film->id}}">
   {{-- Validation --}}

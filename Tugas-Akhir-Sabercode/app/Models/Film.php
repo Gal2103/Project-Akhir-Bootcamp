@@ -23,4 +23,9 @@ class Film extends Model
     {
         return $this->hasMany(Kritik::class, 'film_id');
     }
+
+    public function listCast()
+    {
+        return $this->hasMany(Peran::class, 'film_id');
+    }
 }

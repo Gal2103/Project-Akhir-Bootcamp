@@ -11,4 +11,9 @@ class cast extends Model
 
     protected $table = 'cast';
     protected $fillable = ['nama', 'umur', 'Bio'];
+
+    public function listPeran()
+    {
+        return $this->hasMany(Peran::class, 'cast_id');
+    }
 }

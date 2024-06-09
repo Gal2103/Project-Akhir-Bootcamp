@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\File;
 use App\Models\Film;
 use App\Models\Genre;
+use App\Models\cast;
 
     
 
@@ -80,8 +81,9 @@ class FilmController extends Controller
     public function show(string $id)
     {
         $film = Film::find($id);
+        $cast = cast::get();
 
-        return view('film.detail    ',['film'=> $film]);
+        return view('film.detail    ',['film'=> $film, 'cast'=> $cast]);
     }
 
     /**
